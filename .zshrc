@@ -148,6 +148,7 @@ alias push="git push origin"
 alias tag="git tag"
 alias newtag="git tag -a"
 
+# Alias for managing dotiles
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 
 # Get error messages from journalctl
