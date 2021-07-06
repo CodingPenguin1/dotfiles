@@ -124,12 +124,28 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
+16,46fold
+53,57fold
+64,75fold
+77,82fold
+89,95fold
+97,101fold
+103,108fold
+110,115fold
+117,120fold
+122,133fold
+135,137fold
+139,141fold
+143,151fold
+153,155fold
+157,161fold
+168,185fold
 let &fdl = &fdl
-let s:l = 152 - ((30 * winheight(0) + 29) / 59)
+let s:l = 187 - ((101 * winheight(0) + 29) / 59)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 152
+keepjumps 187
 normal! 0
 let &g:so = s:so_save | let &g:siso = s:siso_save
 nohlsearch

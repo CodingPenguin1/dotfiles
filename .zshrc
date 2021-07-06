@@ -46,7 +46,6 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
 
-
 # ---------------------
 # ENVIRONMENT VARIABLES
 # ---------------------
@@ -56,7 +55,6 @@ export PATH=/opt/cuda/bin:$PATH
 export PATH=~/Utils/bin:$PATH
 export PATH="/home/rjslater/anaconda3/bin:$PATH"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-
 
 
 # -----------------------------
@@ -76,17 +74,12 @@ alias csediscord='ssh -i ~/.ssh/cse-discord-aws.pem ubuntu@54.161.180.188'
 alias pitzer='sshsystem pitzer'
 alias owens='sshsystem owens'
 
-# VPNs
+# Network stuff
 alias wsuvpn="sudo openconnect -u w090rjs wsu-vpn.wright.edu"
-
-# Network Tests
 alias ipscan='sudo nmap -sS -p 22 192.168.1.0/24'
 alias pingtest="ping 8.8.8.8 -c 5"
 alias netmon="speedometer -r wlp4s0 -t wlp4s0 -r enp5s0 -t enp5s0"
-
-# Owen's Port Checker (called "portscan" in ~/Utils/bin)
 alias portcheck="portscan"
-
 
 
 # -------------
@@ -126,15 +119,6 @@ alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
 alias fgrep="fgrep --color=auto"
 
-# Backup alias
-alias fullbackup="backup /mnt/Hulk/Backups ; mjarvis && backup /home/rjslater/Jarvis/Backups/Veronica/"
-
-# Python
-alias py="python"
-
-# Make df always human-readable
-alias df="df -h"
-
 # Git
 alias addup="git add -u"
 alias addall="git add ."
@@ -148,18 +132,9 @@ alias push="git push origin"
 alias tag="git tag"
 alias newtag="git tag -a"
 
-# Alias for managing dotiles
-alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
-
-# Get error messages from journalctl
-alias jctl="journalctl -p 3 -xb"
-
 # Youtube-dl
 alias ytdl="youtube-dl"
 alias ytdl-mp3="youtube-dl --extract-audio --audio-format mp3"
-
-# Visual Studio Code aliases
-alias personal="code /home/rjslater/Documents/Personal"
 
 # Boot aliases
 alias windows="sudo grub-reboot 1 && reboot"
@@ -175,12 +150,15 @@ alias langs="tokei"
 alias ps="procs"
 alias cd="z"
 
-# Quick access to ~/.zshrc
-alias zshrc='${=EDITOR} ~/.zshrc'
-
-# Goodnight alias: backs up system and shuts down
+# Backup aliases
 alias goodnight="trizen -Syyu --noconfirm ; conda update --all -y ; sudo pacman -Rns (pacman -Qtdq) ; fullbackup ; poweroff"
+alias fullbackup="backup /mnt/Hulk/Backups ; mjarvis && backup /home/rjslater/Jarvis/Backups/Veronica/"
 
+# Misc
+alias zshrc='${=EDITOR} ~/.zshrc'
+alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
+alias df="df -h"
+alias py="python"
 
 
 # ----------------
@@ -205,7 +183,6 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
 
 
 # -----------------------------
