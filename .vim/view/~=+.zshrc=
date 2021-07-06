@@ -137,16 +137,16 @@ silent! normal! zE
 135,137fold
 139,141fold
 143,151fold
-153,155fold
-157,161fold
-168,185fold
+153,156fold
+158,162fold
+169,186fold
 let &fdl = &fdl
-let s:l = 187 - ((101 * winheight(0) + 29) / 59)
+let s:l = 154 - ((68 * winheight(0) + 29) / 59)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 187
-normal! 0
+keepjumps 154
+normal! 01|
 let &g:so = s:so_save | let &g:siso = s:siso_save
 nohlsearch
 doautoall SessionLoadPost
