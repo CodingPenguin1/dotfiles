@@ -1,0 +1,289 @@
+# ----- Core -----
+
+# Modkey
+set $mod Mod4
+
+# Font
+font pango:monospace 12
+
+# Make i3 support transparency
+exec --no-startup-id picom -i 1 -o 0 -m 1 &
+
+# i3-workspace-names-daemon (for dynamically renaming workspaces)
+#exec_always --no-startup-id exec i3-workspace-names-daemon
+
+# Natural scrolling
+exec --no-startup-id synclient HorizEdgeScroll=1 VertEdgeScroll=1 VertScrollDelta=-111
+
+# Hide window borders/titlebars
+for_window [class="^.*"] border pixel 0
+
+# Make windows with these titles start floating
+for_window [title="\[floating].*"] floating enable
+for_window [class="(y|Y)akuake"] floating enable
+for_window [title="Figure \d*"] floating enable
+
+# Gaps
+gaps inner 10
+
+# Use dunst for managing notifications, notify-send to send them
+exec killall -q notify-osd
+exec --no-startup-id dunst -config $HOME/.config/dunst/config
+
+# Load GTK Themes for Nautilus, etc
+exec gnome-settings-daemon
+
+
+# ----- WORKSPACES -----
+
+# Force workspaces to specific monitors
+workspace 1 output HDMI-0
+workspace 2 output DP-2
+workspace 3 output HDMI-0
+workspace 4 output DP-2
+workspace 5 output HDMI-0
+workspace 6 output DP-2
+workspace 7 output HDMI-0
+workspace 8 output DP-2
+workspace 9 output HDMI-0
+workspace 10 output DP-2
+workspace 11 output DP-5
+workspace 12 output DP-0
+
+# switch to workspace
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
+bindsym $mod+minus workspace number 11
+bindsym $mod+equal workspace number 12
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10
+bindsym $mod+Shift+minus move container to workspace number 11
+bindsym $mod+Shift+equal move container to workspace number 12
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+Shift+h split h
+
+# split in vertical orientation
+bindsym $mod+Shift+v split v
+
+
+# ----- CONTAINER SHORTCUTS -----
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# kill focused window
+bindsym Control+q kill
+
+# enter fullscreen mode for the focused container
+#bindsym $mod+Shift+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+#bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+#bindsym $mod+Shift+f focus mode_toggle
+
+# focus the parent container
+#bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+
+# ----- i3 SESSION SHORTCUTS -----
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym semicolon resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+
+# ----- APP LAUNCHERS -----
+
+# Albert uses in-app setting to bind kbd shortcut
+exec /usr/bin/albert
+
+# Code
+bindsym $mod+c exec code
+
+# Web Browsers
+bindsym $mod+w exec qutebrowser
+bindsym $mod+Shift+w exec firefox
+
+# GMail
+#bindsym $mod+g exec thunderbird-beta
+bindsym $mod+g exec mailspring
+
+# Music player
+bindsym $mod+m exec spotify
+
+# File manager
+bindsym $mod+Shift+f exec "nautilus $HOME"
+#bindsym $mod+f exec "alacritty -e vifm $HOME $HOME/Documents"
+
+# Pilot
+bindsym $mod+Shift+p exec $HOME/.config/i3/openPilot.py
+
+# Pulse sms
+bindsym $mod+t exec pulse-sms
+
+# Terminal
+bindsym $mod+Return exec alacritty
+
+# Xkill
+bindsym $mod+Shift+q exec alacritty -e xkill
+
+# XFCE4 Appfinder
+bindsym $mod+a exec xfce4-appfinder
+
+# Screensaver
+#bindsym $mod+l exec xscreensaver-command -lock
+bindsym $mod+Escape exec ~/.config/i3/i3lock.sh
+
+# Youtube
+bindsym $mod+y exec "firefox youtube.com/feed/subscriptions"
+
+# Flameshot for screenshots
+bindsym $mod+p exec $HOME/.config/dunst/screenshot.sh flameshot select
+
+# OBS Studio
+bindsym $mod+o exec obs
+
+# Note-taker
+#for_window [ title="notetaker_window" ] floating enable
+#bindsym $mod+n exec alacritty -e /home/rjslater/Utils/bin/notes -t notetaker_window
+
+
+# ----- OTHER CONTROLS -----
+
+# Volume controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $(cat /home/rjslater/.config/i3/.currentAudioOutput) +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $(cat /home/rjslater/.config/i3/.currentAudioOutput) -5% #decrease sound volume
+bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute $(cat /home/rjslater/.config/i3/.currentAudioOutput) toggle # mute sound
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+
+# Poweroff shortcut
+bindsym $mod+Ctrl+Shift+p exec poweroff
+
+# Cycle audio output device
+bindsym $mod+n exec ~/.config/i3/changeAudioDevice.py
+
+
+# ----- AUTOSTART SCRIPTS -----
+
+# Set display resolutions and refresh rates
+exec --no-startup-id sleep 1 && ~/.screenlayout/quadruple_monitor.sh
+
+# Set default browser to qutebrowser
+exec xdg-settings set default-web-browser org.qutebrowser.qutebrowser.desktop &
+
+# Set soundbar as default audio device
+exec pactl set-default-sink alsa_output.pci-0000_0c_00.4.analog_stereo
+
+# Set wallpaper
+exec --no-startup-id sleep 1 && DISPLAY=:0 nitrogen --restore &
+
+# Gromit-mpx annotation software
+exec gromit-mpx
+
+# Start unclutter to autohide cursor
+exec unclutter -idle 2 -jitter 2 -root &
+
+# Polybar
+exec_always --no-startup-id sleep 1 && $HOME/.config/polybar/launch.sh main secondary tertiary quaternary
+
+# Disable display blanking
+exec xset -dpms s off
+exec xset s noblank
+
+# Start facelocker
+exec --no-startup-id facelocker -c ~/.config/facelocker/config.json
+
+# Mount Karen
+exec --no-startup-id ~/Utils/bin/mountsystem Karen rjslater 48567
+
+# Yakuake
+exec --no-startup-id yakuake &
+
+# Autostart apps on workspaces
+exec sleep 5 && i3-msg 'workspace number 11; exec discord' && sleep 5 && i3-msg 'exec spotify' && sleep 1 && i3-msg 'workspace number 10; exec mailspring' && sleep 5 && i3-msg 'workspace number 1'
+

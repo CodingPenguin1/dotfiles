@@ -1,0 +1,186 @@
+/* uses the Adwaita theme as base */
+@import url("resource:///org/gtk/libgtk/theme/Adwaita/gtk-contained.css");
+
+window.csd .titlebar:not(headerbar),
+window.csd .titlebar {
+	background: linear-gradient(to bottom, rgba(242, 242, 242, 1), rgba(222, 222, 221, 1));
+	min-height: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	box-shadow: none;
+	border-bottom: 1px solid #B6B6B3;
+}
+
+window.csd .titlebar:not(headerbar):backdrop,
+window.csd .titlebar:backdrop {
+	min-height: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	box-shadow: none;
+	border-bottom: 1px solid #B6B6B3;
+}
+
+headerbar,
+headerbar.titlebar {
+	background: linear-gradient(to bottom, rgba(242, 242, 242, 1), rgba(232, 232, 231, 1));
+	min-height: 22px;
+	padding-top: 0;
+	padding-bottom: 0;
+	box-shadow: none;
+	border: none;
+	border-bottom: 1px solid #E8E8E7;
+}
+
+headerbar:backdrop,
+headerbar.titlebar:backdrop {
+	background: #E8E8E7;
+	box-shadow: none;
+	border-bottom: 1px solid #E8E8E7;
+}
+
+headerbar button.titlebutton,
+headerbar.titlebar button.titlebutton {
+	min-height: 20px;
+	min-width: 20px;
+	padding: 0;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+headerbar button,
+headerbar widget {
+	background: linear-gradient(to bottom, rgba(242, 242, 242, 1), rgba(222, 222, 221, 1));
+	min-height: 26px;
+	min-width: 26px;
+	padding: 0;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+headerbar entry,
+headerbar switch,
+headerbar spinbutton {
+	min-height: 26px;
+	min-width: 26px;
+	padding: 0;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+headerbar > separator {
+	min-height: 1px;
+	padding: 0;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+decoration {
+	background: #F4F4F4;
+	border-radius: 2px 2px 0 0;
+}
+
+decoration:backdrop {
+	background: #E8E8E7;
+	border-radius: 2px 2px 0 0;
+}
+
+button > box > label.counter-label {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+button {
+	min-height: 12px;
+}
+
+entry {
+	min-height: 12px;
+}
+
+menubar > menuitem,
+.menubar > menuitem {
+	padding: 1px 6px;
+	margin: 0;
+}
+
+menu,
+.menu {
+	padding: 0;
+	margin: 0;
+}
+
+menu menuitem,
+.menu menuitem {
+	min-height: 12px;
+	min-width: 24px;
+	padding: 3px;
+}
+
+notebook {
+	padding: 0;
+}
+
+notebook > header > tabs {
+	background-color: #E8E8E7;
+	padding: 2px;
+	min-height: 12px;
+}
+
+notebook > header > tabs > tab {
+    padding: 2px;
+	min-height: 12px;
+}
+
+.nautilus-window {
+	background: #FFFFFF;
+}
+
+.nautilus-window treeview .view {
+	color: #232729;
+	background: #FFFFFF;
+	border-bottom: 1px solid rgba(232, 232, 232, 1);
+}
+
+.nautilus-window treeview .view:selected {
+	color: #232729;
+	background: #4A90D9;
+}
+
+.nautilus-window .searchbar-container {
+	margin-top: -1px
+}
+
+.nautilus-desktop.nautilus-canvas-item {
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+.nautilus-window .floating-bar {
+	border: 1px solid rgba(195, 196, 196, 1);
+	border-radius: 2px;
+	background-color: #ffffff;
+	color: #232729;
+}
+
+.disk-space-display.unknown {
+	background-color: #7f817c;
+	border-color: rgba(0, 0, 0, 0.5);
+}
+
+.disk-space-display.used {
+	background-color: #6e95c9;
+	border-color: rgba(0, 0, 0, 0.5);
+}
+
+.disk-space-display.free {
+	background-color: #ececea;
+	border-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+{
+    "faces_path": "/home/rjslater/.config/facelocker/known_faces",
+    "lock_command": "/home/rjslater/.config/i3/i3lock.sh",
+    "primary_user": "ryan_slater",
+    "lock_delay": 60,
+    "output_file": "/tmp/facelocker",
+    "disable_file": "/tmp/disable_facelocker"
+}

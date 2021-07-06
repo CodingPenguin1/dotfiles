@@ -1,0 +1,105 @@
+stage {
+	font-family: cantarell, sans-serif;
+	font-size: 11pt;
+}
+
+#panel {
+	background-color: rgba(58, 65, 65, 0.40);
+	height: 23px;
+	box-shadow: 0px 0px 4px 0px #4A4F51;
+}
+
+.panel-button {
+	font-size: 11pt;
+}
+
+#panel .panel-corner {
+	-panel-corner-radius: 0;	
+}
+
+.popup-menu-boxpointer, 
+.candidate-popup-boxpointer {
+	-arrow-border-radius: 2px;
+	-arrow-base: 0;
+	-arrow-rise: 0;
+	-arrow-background-color: transparent;
+	border-radius: 2px;
+	background-color: rgba(58, 65, 65, 0.70);
+	box-shadow: 0px 0px 12px 1px #4A4F51;
+	margin: 2px 8px 8px;
+}
+
+.popup-separator-menu-item {
+	border: none;
+}
+
+.message {
+  background-color: transparent;
+}
+
+.message-list-section-title { /* deprecated in 3.22 */
+	color: #E8E8E7;
+}
+.message:focus,
+.message-list-section-title:focus  { /* deprecated in 3.22 */
+	background-color: rgba(255, 255, 255, 0.10);
+}
+
+.message:hover,
+.message-list-section-title:hover { /* deprecated in 3.22 */
+  background-color: rgba(255, 255, 255, 0.10);
+}
+
+.media-message-cover-icon {
+	icon-size: 64px; 
+}
+
+.message-list-clear-button.button {
+	border: none;
+	border-color: transparent;
+}
+
+.message-list-clear-button.button:hover {
+	background-color: rgba(255, 255, 255, 0.10);
+}
+
+.notification-banner,
+.notification-banner:hover,
+.notification-banner:focus {
+	background-color: rgba(58, 65, 65, 0.80);
+	border-radius: 2px;
+	box-shadow: 0px 0px 12px 1px #4A4F51;
+}
+
+.osd-window {
+	background-color: rgba(58, 65, 65, 0.80);
+	border: 1px solid rgba(0, 0, 0, 0.50);
+	border-radius: 2px;
+	box-shadow: 0px 0px 12px 1px #4A4F51;
+}
+
+.switcher-list {
+	background-color: rgba(58, 65, 65, 0.80);
+	border: 1px solid rgba(0, 0, 0, 0.50);
+	border-radius: 2px;
+	box-shadow: 0px 0px 12px 1px #4A4F51;
+}
+.search-entry {
+	border-radius: 0px;
+	padding: 7px 9px;
+	border: 1px solid rgba(0, 0, 0, 0.50);
+	background-color: rgba(58, 65, 65, 0.80);
+	border: 1px solid rgba(0, 0, 0, 0.50);
+}
+
+#dashtodockContainer #dash {
+	background-color: rgba(58, 65, 65, 0.80); 
+	border: 1px solid rgba(0, 0, 0, 0.50);
+	padding: 1px 0px;
+	border-radius: 0;
+}
+
+#dashtodock #dash:rtl {
+	border-radius: 0;
+}
+

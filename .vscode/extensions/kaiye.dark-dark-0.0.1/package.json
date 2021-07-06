@@ -1,0 +1,27 @@
+{
+	"name": "dark-dark",
+	"displayName": "Dark Dark",
+	"description": "Modify from Default Dark+",
+	"version": "0.0.1",
+	"publisher": "kaiye",
+	"engines": {
+		"vscode": "^1.12.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Dark Dark Theme",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Dark Dark Theme-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "3104ba3e-39a4-4433-a7bc-922ec0c5e57e",
+		"publisherId": "eb30ffb2-201d-4d14-9c69-c493f857fc0b",
+		"publisherDisplayName": "kai ye"
+	}
+}

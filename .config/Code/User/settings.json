@@ -1,0 +1,136 @@
+{
+    "python.pythonPath": "/home/rjslater/anaconda3/bin/python",
+    "workbench.startupEditor": "newUntitledFile",
+    "files.autoSave": "afterDelay",
+    "python.linting.pylintEnabled": false,
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.enabled": true,
+    "files.trimTrailingWhitespace": true,
+    "explorer.confirmDragAndDrop": false,
+    "python.formatting.provider": "autopep8",
+    "python.linting.pycodestyleArgs": [
+        "--ignore=E501,E266",
+    ],
+    "python.formatting.autopep8Args": [
+        "--max-line-length=1000"
+    ],
+
+    //"powermode.enabled": true,
+    //"powermode.presets": "flames",
+
+    "explorer.confirmDelete": false,
+
+    "better-comments.tags": [
+        {
+            "tag": "=",
+            "color": "#FFFF00",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        }
+        ],
+
+    "bracket-pair-colorizer-2.colors": [
+        "#6272a4",
+        "#ff5555",
+        "#ffb86c",
+        "#f1fa8c",
+        "#50fa7b",
+        "#6272a4",
+        "#bd93f9",
+    ],
+
+    "indentRainbow.colors": [
+        "#6272a44d",
+        "#ff55554d",
+        "#ffb86c4d",
+        "#f1fa8c4d",
+        "#50fa7b4d",
+        "#6272a44d",
+        "#bd93f94d",
+    ],
+
+    "workbench.colorTheme": "Dracula",
+    "diffEditor.renderSideBySide": false,
+    "C_Cpp.updateChannel": "Insiders",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "terminal.integrated.rendererType": "dom",
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "gitlens.views.repositories.files.layout": "tree",
+    "terminal.integrated.shell.linux": "/usr/bin/fish",
+    "git-graph.integratedTerminalShell": "/usr/bin/fish",
+    "terminal.external.linuxExec": "konsole",
+    "tabnine.experimentalAutoImports": true,
+    "python.languageServer": "Pylance",
+    "workbench.panel.defaultLocation": "right",
+    "latex-workshop.message.update.show": false,
+    "jupyter.sendSelectionToInteractiveWindow": false,
+    "jupyter.askForKernelRestart": false,
+    "jupyter.alwaysTrustNotebooks": true,
+
+    "clang-format.executable": "clang-format",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": false
+    },
+    "sourcery.token": "user_w18XzntbzBuNOXDvmYzMzKDRD15rBJnUwQKn2_0_6jlhPVKMES7RVG7rCc0",
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "editor.fontLigatures": null,
+    "editor.fontFamily": "'SauceCodePro Nerd Font', 'fontawesome', 'fixed', 'freemono'",
+    "python.showStartPage": false,
+    "RPC.showWorkspace": false,
+    "editor.foldingStrategy": "auto",
+    "python.defaultInterpreterPath": "/home/rjslater/anaconda3/bin/python",
+    "redhat.telemetry.enabled": false
+}

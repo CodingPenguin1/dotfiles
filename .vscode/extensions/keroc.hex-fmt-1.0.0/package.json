@@ -1,0 +1,88 @@
+{
+	"name": "hex-fmt",
+	"displayName": "Intel HEX format",
+	"description": "Adds support for the Intel HEX file format with syntax highlighting and basic commands",
+	"version": "1.0.0",
+	"publisher": "keroc",
+	"icon": "images/icone.png",
+	"galleryBanner": {
+		"color": "#5c2d91",
+		"theme": "dark"
+	},
+	"license": "SEE LICENSE IN LICENSE.md",
+	"homepage": "https://github.com/keroc/hex-fmt/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/keroc/hex-fmt"
+	},
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"categories": [
+		"Languages",
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:hex",
+		"onCommand:extension.hexFind",
+		"onCommand:extension.repairHex"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"languages": [
+			{
+				"id": "hex",
+				"extensions": [
+					".hex",
+					".HEX"
+				]
+			}
+		],
+		"grammars": [
+			{
+				"language": "hex",
+				"scopeName": "text.hex",
+				"path": "./syntaxes/hex.tmLanguage"
+			}
+		],
+		"commands": [
+			{
+				"command": "extension.hexFind",
+				"title": "Hex Find"
+			},
+			{
+				"command": "extension.repairHex",
+				"title": "Hex Repair"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Hex-fmt configuration",
+			"properties": {
+				"hex-fmt.repairOnSave": {
+					"type": "boolean",
+					"default": true,
+					"description": "Try to repair an hex file each times it's saved."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0",
+		"mocha": "^2.3.3",
+		"@types/node": "^6.0.40",
+		"@types/mocha": "^2.2.32"
+	},
+	"__metadata": {
+		"id": "5149b880-bc9c-4bd7-a43a-19401d412392",
+		"publisherId": "64ef0bac-a65c-469b-9727-6f956ce4863b",
+		"publisherDisplayName": "keroc"
+	}
+}

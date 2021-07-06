@@ -1,0 +1,207 @@
+[
+    {
+        "key": "c",
+        "matches": ["c"]
+    },
+    {
+        "key": "cmake",
+        "matches": ["makfile", "Makefile", "cmake"]
+    },
+    {
+        "key": "coffeescript",
+        "matches": ["coffee", "coffeescript"]
+    },
+    {
+        "key": "cpp",
+        "matches": ["cpp"]
+    },
+    {
+        "key": "csharp",
+        "matches": ["cs", "csharp"]
+    },
+    {
+        "key": "css",
+        "matches": ["css"]
+    },
+    {
+        "key": "dart",
+        "matches": ["dart"]
+    },
+    {
+        "key": "docker",
+        "matches": [
+            "dockerfile",
+            "Dockerfile",
+            "dockerignore",
+            "docker-compose.yml"
+        ]
+    },
+    {
+        "key": "editorconfig",
+        "matches": ["editorconfig"]
+    },
+    {
+        "key": "elixir",
+        "matches": ["ex", "elixir"]
+    },
+    {
+        "key": "env",
+        "matches": ["env"]
+    },
+    {
+        "key": "erlang",
+        "matches": ["erlang"]
+    },
+    {
+        "key": "git",
+        "matches": ["gitignore", "gitattributes"]
+    },
+    {
+        "key": "go",
+        "matches": ["go", "go.mod"]
+    },
+    {
+        "key": "golo",
+        "matches": ["golo"]
+    },
+    {
+        "key": "gradle",
+        "matches": ["gradle"]
+    },
+    {
+        "key": "groovy",
+        "matches": ["groovy", "gvy", "gy", "gsh"]
+    },
+    {
+        "key": "handlebars",
+        "matches": ["hbs", "handlebars"]
+    },
+    {
+        "key": "haskell",
+        "matches": ["hs", "haskell"]
+    },
+    {
+        "key": "html",
+        "matches": ["html", "htm"]
+    },
+    {
+        "key": "java",
+        "matches": ["java"]
+    },
+    {
+        "key": "javascript",
+        "matches": ["js", "javascript"]
+    },
+    {
+        "key": "json",
+        "matches": ["json"]
+    },
+    {
+        "key": "jsx",
+        "matches": ["jsx"]
+    },
+    {
+        "key": "kotlin",
+        "matches": ["kt", "kotlin"]
+    },
+    {
+        "key": "less",
+        "matches": ["less"]
+    },
+    {
+        "key": "lua",
+        "matches": ["lua"]
+    },
+    {
+        "key": "markdown",
+        "matches": ["md", "markdown"]
+    },
+    {
+        "key": "perl",
+        "matches": ["perl"]
+    },
+    {
+        "key": "php",
+        "matches": ["php"]
+    },
+    {
+        "key": "powershell",
+        "matches": ["psh", "pwsh", "bat", "powershell"]
+    },
+    {
+        "key": "python",
+        "matches": ["py", "python"]
+    },
+    {
+        "key": "rpy",
+        "matches": ["rpy", "renpy"]
+    },
+    {
+        "key": "ruby",
+        "matches": ["rb", "ruby"]
+    },
+    {
+        "key": "rust",
+        "matches": ["rs", "rust"]
+    },
+    {
+        "key": "sass",
+        "matches": ["sass"]
+    },
+    {
+        "key": "scala",
+        "matches": ["scala"]
+    },
+    {
+        "key": "shell",
+        "matches": ["sh", "shell"]
+    },
+    {
+        "key": "sql",
+        "matches": ["sql"]
+    },
+    {
+        "key": "stylus",
+        "matches": ["stylus", "styl"]
+    },
+    {
+        "key": "swift",
+        "matches": ["swift"]
+    },
+    {
+        "key": "tex",
+        "matches": ["tex", "latex"]
+    },
+    {
+        "key": "text",
+        "matches": ["txt", "text"]
+    },
+    {
+        "key": "toml",
+        "matches": ["toml"]
+    },
+    {
+        "key": "tsx",
+        "matches": ["tsx"]
+    },
+    {
+        "key": "twig",
+        "matches": ["twig"]
+    },
+    {
+        "key": "typescript",
+        "matches": ["ts", "typescript"]
+    },
+    {
+        "key": "vue",
+        "matches": ["vue"]
+    },
+    {
+        "key": "xml",
+        "matches": ["xml", "xaml"]
+    },
+    {
+        "key": "yaml",
+        "matches": ["yml", "yaml"]
+    }
+]

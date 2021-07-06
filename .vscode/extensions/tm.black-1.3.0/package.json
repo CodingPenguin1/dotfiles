@@ -1,0 +1,36 @@
+{
+	"name": "black",
+	"displayName": "Black",
+	"description": "Black Theme for Visual Studio Code. A perfect blend for those who love the darkness",
+	"version": "1.3.0",
+	"engines": {
+		"vscode": "^1.42.0"
+	},
+	"publisher": "TM",
+	"icon": "images/icon_dark.png",
+	"galleryBanner": {
+		"theme": "dark",
+		"color": "#121212"
+	},
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Black",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Black-color-theme.json"
+			}
+		]
+	},
+	"dependencies": {
+		"vsce": "^1.74.0"
+	},
+	"__metadata": {
+		"id": "09ce184b-1794-45c1-aa9d-51e51ee467d7",
+		"publisherId": "aac134d7-31e7-447a-a06f-0b45f339c1d3",
+		"publisherDisplayName": "Tamim Mirza"
+	}
+}

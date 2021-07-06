@@ -1,0 +1,22 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.RECOMMENDATION_PLAYLIST_ID = exports.SPOTIFY_LIKED_SONGS_PLAYLIST_ID = exports.SPOTIFY_LIKED_SONGS_PLAYLIST_NAME = exports.RECOMMENDATION_LIMIT = exports.SOFTWARE_TOP_40_PLAYLIST_ID = exports.MAX_MENU_HEIGHT = exports.DARK_BG_TEXT_SECONDARY_COLOR = exports.YES_LABEL = exports.OK_LABEL = exports.DARK_BG_TEXT_COLOR = exports.DARK_BG_COLOR = exports.BOTTOM_BAR_HEIGHT_MIN = exports.BOTTOM_BAR_HEIGHT_MAX = exports.GETTING_STARTED_MIN_HEIGHT = exports.TOP_APP_BAR_MIN_HEIGHT = exports.PLAYLIST_MIN_HEIGHT = exports.MEDIA_HEIGHT = exports.ACCOUNT_HEIGHT = void 0;
+exports.ACCOUNT_HEIGHT = 65;
+exports.MEDIA_HEIGHT = 108;
+exports.PLAYLIST_MIN_HEIGHT = 250;
+exports.TOP_APP_BAR_MIN_HEIGHT = 46;
+exports.GETTING_STARTED_MIN_HEIGHT = 160;
+exports.BOTTOM_BAR_HEIGHT_MAX = 284;
+exports.BOTTOM_BAR_HEIGHT_MIN = 50;
+exports.DARK_BG_COLOR = "#343434";
+exports.DARK_BG_TEXT_COLOR = "#ffffff";
+exports.OK_LABEL = "Ok";
+exports.YES_LABEL = "Yes";
+exports.DARK_BG_TEXT_SECONDARY_COLOR = "#bdbdbd";
+exports.MAX_MENU_HEIGHT = 280;
+exports.SOFTWARE_TOP_40_PLAYLIST_ID = "6jCkTED0V5NEuM8sKbGG1Z";
+exports.RECOMMENDATION_LIMIT = 25;
+exports.SPOTIFY_LIKED_SONGS_PLAYLIST_NAME = "Liked Songs";
+exports.SPOTIFY_LIKED_SONGS_PLAYLIST_ID = "liked-songs-playlist";
+exports.RECOMMENDATION_PLAYLIST_ID = "recommendation-playlist";
+//# sourceMappingURL=view_constants.js.map

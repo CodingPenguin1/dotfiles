@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Pop-slim-dark
+Comment=The Pop-slim-dark GTK Theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Pop-slim-dark
+MetacityTheme=Pop
+IconTheme=Pop
+CursorTheme=Pop
+CursorSize=24
+ButtonLayout=close:maximize
