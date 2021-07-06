@@ -151,7 +151,7 @@ alias ps="procs"
 alias cd="z"
 
 # Backup aliases
-alias dotupdate="dotfiles add -u ; dotfiles commit -m "$(date +"Automatic push %d-%m-%Y")" ; dotfiles push"
+alias dotupdate='dotfiles add -u ; dotfiles commit -m "$(date +"Automatic push %d-%m-%Y")" ; dotfiles push'
 alias goodnight="trizen -Syyu --noconfirm ; conda update --all -y ; sudo pacman -Rns (pacman -Qtdq) ; dotupdate ; fullbackup ; poweroff"
 alias fullbackup="backup /mnt/Hulk/Backups ; mjarvis && backup /home/rjslater/Jarvis/Backups/Veronica/"
 
