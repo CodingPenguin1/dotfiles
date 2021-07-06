@@ -1,0 +1,34 @@
+Language: Cpp
+BasedOnStyle: LLVM
+
+AlignAfterOpenBracket: DontAlign
+AlignConsecutiveDeclarations: false
+AlignConsecutiveAssignments: false
+AlignOperands: false
+SpacesBeforeTrailingComments: 2
+AlignTrailingComments: true
+
+AlwaysBreakTemplateDeclarations: true
+
+AllowShortBlocksOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+
+ColumnLimit: 0
+BreakStringLiterals: false
+ReflowComments: false
+
+IndentWidth: 4
+TabWidth: 4
+ContinuationIndentWidth: 8
+IndentCaseLabels: true
+UseTab: Never
+
+MaxEmptyLinesToKeep: 2
+
+DerivePointerAlignment: false
+PointerAlignment: Right
+
+SortIncludes: true
+SortUsingDeclarations: true
+Standard: Cpp11
