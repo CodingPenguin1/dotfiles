@@ -187,7 +187,7 @@ bindsym $mod+c exec code
 
 # Web Browsers
 bindsym $mod+w exec qutebrowser
-bindsym $mod+Shift+w exec firefox
+bindsym $mod+Shift+w exec brave
 
 # GMail
 #bindsym $mod+g exec thunderbird-beta
@@ -220,7 +220,7 @@ bindsym $mod+a exec xfce4-appfinder
 bindsym $mod+Escape exec ~/.config/i3/i3lock.sh
 
 # Youtube
-bindsym $mod+y exec "firefox youtube.com/feed/subscriptions"
+bindsym $mod+y exec "brave youtube.com/feed/subscriptions"
 
 # Flameshot for screenshots
 bindsym $mod+p exec $HOME/.config/dunst/screenshot.sh flameshot select
