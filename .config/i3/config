@@ -7,10 +7,7 @@ set $mod Mod4
 font pango:monospace 12
 
 # Make i3 support transparency
-exec --no-startup-id picom -i 1 -o 0 -m 1 &
-
-# i3-workspace-names-daemon (for dynamically renaming workspaces)
-#exec_always --no-startup-id exec i3-workspace-names-daemon
+exec --no-startup-id picom &
 
 # Natural scrolling
 exec --no-startup-id synclient HorizEdgeScroll=1 VertEdgeScroll=1 VertScrollDelta=-111
