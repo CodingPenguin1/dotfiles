@@ -62,17 +62,18 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # -----------------------------
 
 # Ssh aliases
-alias friday='sshsystem friday'
-alias mfriday='mountsystem friday'
-alias controlFriday='ssh -i ~/.ssh/FRIDAY_rsa -YC rjslater@192.168.1.148 x2x -east -to :0.0'
-alias jarvis='sshsystem Jarvis'
-alias mjarvis='mountsystem Jarvis'
-alias bender='sshsystem bender'
-alias mbender='mountsystem Bender'
-alias fry='sshsystem fry'
+alias friday='ssh friday'
+alias mfriday='sshfs friday:/home/stark ~/Friday'
+
+alias jarvis='ssh jarvis'
+alias mjarvis='sshfs jarvis:/home/rjslater ~/Jarvis'
+
+alias bender='ssh bender'
+alias mbender='sshfs bender:/home/w090rjs ~/Bender'
+
+alias fry='ssh fry'
+
 alias csediscord='ssh -i ~/.ssh/cse-discord-aws.pem ubuntu@54.161.180.188'
-alias pitzer='sshsystem pitzer'
-alias owens='sshsystem owens'
 
 # Network stuff
 alias wsuvpn="sudo openconnect -u w090rjs wsu-vpn.wright.edu"
