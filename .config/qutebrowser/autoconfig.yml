@@ -30,3 +30,5 @@ settings:
     https://realsport101.com: false
   statusbar.show:
     global: never
+  url.default_page:
+    global: https://start.duckduckgo.com
