@@ -124,7 +124,7 @@
         "**/.factorypath": true
     },
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter-notebook"
     },
     "editor.fontLigatures": null,
     "editor.fontFamily": "'SauceCodePro Nerd Font', 'fontawesome', 'fixed', 'freemono'",
@@ -132,5 +132,9 @@
     "RPC.showWorkspace": false,
     "editor.foldingStrategy": "auto",
     "python.defaultInterpreterPath": "/home/rjslater/anaconda3/bin/python",
-    "redhat.telemetry.enabled": false
+    "redhat.telemetry.enabled": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    }
 }
