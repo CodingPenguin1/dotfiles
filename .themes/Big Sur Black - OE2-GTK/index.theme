@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Big Sur Black - OE2-GTK
+Comment=Big Sur Black - OE2-GTK
+Encoding=UTF-8
+
+
+[X-GNOME-Metatheme]
+GtkTheme=Big Sur Black - OE2-GTK
+IconTheme=OE3-Icon Pack
+CursorTheme=DMZ-Black
+ButtonLayout=menu:minimize,maximize,close
