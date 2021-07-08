@@ -1,6 +1,4 @@
-packadd! dracula
 syntax enable
-colorscheme dracula
 set tabstop=4
 set autoindent
 set softtabstop=4

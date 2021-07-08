@@ -256,9 +256,6 @@ exec xdg-settings set default-web-browser org.qutebrowser.qutebrowser.desktop &
 # Set soundbar as default audio device
 exec pactl set-default-sink alsa_output.pci-0000_0c_00.4.analog_stereo
 
-# Set wallpaper
-exec --no-startup-id sleep 1 && DISPLAY=:0 nitrogen --restore &
-
 # Gromit-mpx annotation software
 exec gromit-mpx
 
@@ -282,5 +279,11 @@ exec --no-startup-id ~/Utils/bin/mountsystem Karen rjslater 48567
 exec --no-startup-id yakuake &
 
 # Autostart apps on workspaces
-exec sleep 5 && i3-msg 'workspace number 11; exec discord' && sleep 5 && i3-msg 'exec spotify' && sleep 1 && i3-msg 'workspace number 10; exec mailspring' && sleep 5 && i3-msg 'workspace number 1'
+exec sleep 5 && i3-msg 'workspace number 11; exec discord' && sleep 5 && i3-msg 'exec spotify' && sleep 2 && i3-msg 'workspace number 10; exec mailspring' && sleep 5 && i3-msg 'workspace number 1'
+#i3-msg "workspace 11; append_layout ~/.config/i3/workspace-11.json"
+
+
+# Set wallpaper
+#exec --no-startup-id sleep 1 && DISPLAY=:0 nitrogen --restore &
+exec sleep 10 && DISPLAY=:0 feh --bg-scale --randomize ~/Pictures/Wallpapers/Wallpaper_Cycle
 

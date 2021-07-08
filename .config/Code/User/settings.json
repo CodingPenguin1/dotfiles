@@ -79,7 +79,7 @@
         "#bd93f94d",
     ],
 
-    "workbench.colorTheme": "Dracula",
+    "workbench.colorTheme": "Monokai Pro",
     "diffEditor.renderSideBySide": false,
     "C_Cpp.updateChannel": "Insiders",
     "editor.suggestSelection": "first",

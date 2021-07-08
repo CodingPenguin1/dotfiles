@@ -104,7 +104,7 @@ colors:
     green:   '0x50fa7b'
     yellow:  '0xf1fa8c'
     blue:    '0xbd93f9'
-    magenta: '0xff79c6'
+    magenta: '0x9f79c6'
     cyan:    '0x8be9fd'
     white:   '0xbfbfbf'
   bright:
@@ -128,6 +128,7 @@ colors:
 
 background_opacity: 0.8
 
+
 key_bindings:
     # (Windows, Linux, and BSD only)
   - { key: V,        mods: Control|Shift, action: Paste            }
@@ -147,3 +148,4 @@ key_bindings:
   - { key: PageDown,  mods: Shift,   action: ScrollPageDown, mode: ~Alt       }
   - { key: Home,      mods: Shift,   action: ScrollToTop,    mode: ~Alt       }
   - { key: End,       mods: Shift,   action: ScrollToBottom, mode: ~Alt       }
+
