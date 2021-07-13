@@ -90,7 +90,7 @@ alias portcheck="portscan"
 alias syu="trizen -Syyu"
 alias install="trizen -S"
 alias uninstall="trizen -R"
-alias update="trizen -Syyu ; conda update --all"
+alias update="trizen -Syyu ; sudo pacman -Rns $(pacman -Qtdq) ; conda update --all"
 alias unlock="sudo rm /var/lib/pacman/db.lck"
 alias cleanup="sudo pacman -Rns $(pacman -Qtdq)"
 
