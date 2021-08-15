@@ -217,7 +217,8 @@ bindsym $mod+a exec xfce4-appfinder
 bindsym $mod+Escape exec ~/.config/i3/i3lock.sh
 
 # Youtube
-bindsym $mod+y exec "brave youtube.com/feed/subscriptions"
+#bindsym $mod+y exec "brave youtube.com/feed/subscriptions"
+bindsym $mod+y exec "/usr/lib/brave-bin/brave --profile-directory=Default --app-id=agimnkijcaahngcdmfeangaknmldooml"
 
 # Flameshot for screenshots
 bindsym $mod+p exec $HOME/.config/dunst/screenshot.sh flameshot select
@@ -253,11 +254,8 @@ exec --no-startup-id sleep 1 && ~/.screenlayout/quadruple_monitor.sh
 # Set default browser to qutebrowser
 exec xdg-settings set default-web-browser org.qutebrowser.qutebrowser.desktop &
 
-# Set soundbar as default audio device
+# Set speakers as default audio device
 exec pactl set-default-sink alsa_output.pci-0000_0c_00.4.analog_stereo
-
-# Gromit-mpx annotation software
-exec gromit-mpx
 
 # Start unclutter to autohide cursor
 exec unclutter -idle 2 -jitter 2 -root &
@@ -272,15 +270,11 @@ exec xset s noblank
 # Start facelocker
 exec --no-startup-id facelocker -c ~/.config/facelocker/config.json
 
-# Mount Karen
-exec --no-startup-id ~/Utils/bin/mountsystem Karen rjslater 48567
-
-# Yakuake
-exec --no-startup-id yakuake &
+# Mount Jarvis
+exec --no-startup-id sshfs jarvis:/home/rjslater ~/Jarvis
 
 # Autostart apps on workspaces
 exec sleep 5 && i3-msg 'workspace number 11; exec discord' && sleep 5 && i3-msg 'exec spotify' && sleep 2 && i3-msg 'workspace number 10; exec mailspring' && sleep 5 && i3-msg 'workspace number 1'
-#i3-msg "workspace 11; append_layout ~/.config/i3/workspace-11.json"
 
 
 # Set wallpaper

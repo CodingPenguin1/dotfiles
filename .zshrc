@@ -161,6 +161,7 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 alias df="df -h"
 alias py="python"
 alias ecat="/usr/bin/cat"  # Cat exactly
+alias open="xdg-open"
 
 
 # ----------------

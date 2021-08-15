@@ -138,14 +138,14 @@ silent! normal! zE
 139,141fold
 143,151fold
 153,156fold
-158,163fold
-170,187fold
+158,164fold
+171,188fold
 let &fdl = &fdl
-let s:l = 95 - ((79 * winheight(0) + 29) / 59)
+let s:l = 164 - ((163 * winheight(0) + 40) / 80)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 95
+keepjumps 164
 normal! 01|
 let &g:so = s:so_save | let &g:siso = s:siso_save
 nohlsearch
