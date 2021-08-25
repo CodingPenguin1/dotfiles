@@ -162,6 +162,7 @@ alias df="df -h"
 alias py="python"
 alias ecat="/usr/bin/cat"  # Cat exactly
 alias open="xdg-open"
+alias c="clear"
 
 
 # ----------------
